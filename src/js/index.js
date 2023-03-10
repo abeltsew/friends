@@ -1,4 +1,13 @@
 const mobileMenu = document.querySelector('.mobile-menu i');
+const menu = document.querySelectorAll('.menu-mobile,.mobile-menu i');
+
+const toogleMenu = () => {
+  menu[1].classList.toggle('hideMenu');
+};
+
+menu.forEach((list) => {
+  list.addEventListener('click', () => toogleMenu());
+});
 
 const setBg = (on) => {
   if (on) {

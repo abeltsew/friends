@@ -7,6 +7,84 @@
   font-size: 2.5rem;
 }
 
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  background: rgba(89, 89, 89, 95%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 57px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  z-index: 999;
+  animation: slide-in 1s both;
+}
+
+.hideMenu {
+  display: none;
+}
+
+.buy-ticket {
+  border: 4px solid var(--orange);
+  padding: 0.5rem 2rem;
+  color: var(--orange);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.close {
+  color: #e1d7d4;
+  align-self: end;
+  margin: 3.875rem 2.375rem -0.875rem;
+  background-color: unset;
+  width: 1rem;
+  height: 1rem;
+  z-index: 989;
+  border: none;
+}
+
+.close:hover {
+  background-color: unset;
+  color: #6f6c6b;
+  border: none;
+  transform: rotate(180deg);
+  scale: 1.5;
+}
+
+.mobileLinkText {
+  text-decoration: none;
+  color: #fff5e1;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.mobileLinkText:hover {
+  color: #ff6b00;
+  font-size: 40px;
+  transition: 300ms ease-in-out;
+}
+
+.mobileLink {
+  list-style: none;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid #6f6c6b;
+  margin: 1rem;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .desktop-menu,
 .social {
   display: none;
@@ -107,6 +185,11 @@
 }
 
 @media (min-width: 768px) {
+  .menu-mobile,
+  .mobile-menu {
+    display: none;
+  }
+
   .social {
     display: flex;
     justify-content: end;
@@ -147,10 +230,6 @@
     max-width: 35rem;
   }
 
-  .mobile-menu {
-    display: none;
-  }
-
   .logo {
     cursor: pointer;
     text-decoration: none;
@@ -184,14 +263,6 @@
 
   .link:hover {
     color: var(--orange);
-  }
-
-  .buy-ticket {
-    border: 4px solid var(--orange);
-    padding: 0.5rem 2rem;
-    color: var(--orange);
-    font-weight: 700;
-    cursor: pointer;
   }
 
   .date-location h2 {

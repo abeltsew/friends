@@ -7,15 +7,16 @@
 }
 
 .main-program h2 {
-  padding: 2rem;
+  padding: 1.5rem;
+  font-weight: 300;
 }
 
 .main-program h2:after {
   position: absolute;
-  left: calc(50% - 35px);
+  left: calc(50% - 30px);
   display: block;
-  width: 70px;
-  border-bottom: 2px solid var(--orange);
+  width: 60px;
+  border-bottom: 1px solid var(--orange);
   content: '';
   padding-top: 1rem;
 }
@@ -24,7 +25,7 @@
   display: grid;
   justify-content: center;
   grid-gap: 0.5rem;
-  padding: 1rem;
+  padding: 5%;
   list-style: none;
   padding-top: 2rem;
 }
@@ -44,14 +45,13 @@
 }
 
 .event :nth-child(1) {
-  flex: 1;
-  font-size: 2rem;
   display: flex;
   justify-content: center;
 }
 
 .event :nth-child(2) {
   flex: 1;
+  padding: 0 0.5rem;
   color: var(--orange);
   font-size: 1.5rem;
   text-align: center;
@@ -60,7 +60,7 @@
 .event :nth-child(3) {
   flex: 3;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .get-ticket {
@@ -74,6 +74,10 @@
 }
 
 @media (min-width: 768px) {
+  .main-program h2 {
+    padding-bottom: 3rem;
+  }
+
   .events {
     grid-template-columns: repeat(5, 1fr);
     padding: 0 10%;

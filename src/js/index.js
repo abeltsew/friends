@@ -62,9 +62,12 @@ const guests = [
 
 const guestsList = document.querySelector('.guests-list');
 
-guests.forEach((guest) => {
+guests.forEach((guest, i) => {
   const guestDiv = document.createElement('div');
   guestDiv.classList.add('guest-div');
+  if (i > 1) {
+    guestDiv.classList.add('hide');
+  }
   const img = document.createElement('img');
   img.classList.add('guest-img');
   img.src = guest.image;
@@ -98,3 +101,20 @@ guests.forEach((guest) => {
 
   guestsList.appendChild(guestDiv);
 });
+
+const moreGuests = document.createElement('button');
+moreGuests.classList.add('more');
+moreGuests.innerHTML =
+  'More <span><i class="fa-solid fa-chevron-down"></i><span>';
+
+const showMore = () => {
+  hidden = document.querySelectorAll('.hide');
+  hidden.forEach((guest) => {
+    guest.classList.toggle('hide');
+  });
+  moreGuests.classList.add('hide');
+};
+
+moreGuests.addEventListener('click', () => showMore());
+
+guestsList.appendChild(moreGuests);

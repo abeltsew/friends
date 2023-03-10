@@ -21,7 +21,7 @@
 .guests-list {
   display: grid;
   justify-content: center;
-  padding: 2rem 10%;
+  padding: 2rem 5%;
   grid-gap: 3rem;
 }
 
@@ -42,12 +42,12 @@
 }
 
 .guest-name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .guest-title {
   color: var(--orange);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -76,14 +76,38 @@
   position: absolute;
   z-index: -1;
 }
+.more {
+  cursor: pointer;
+  border: solid 1px var(--gray);
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.more span {
+  margin-left: 0.5rem;
+  color: var(--orange);
+}
+
+.hide {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .guests-list {
     grid-template-columns: 1fr 1fr;
+    padding: 2rem 10%;
   }
 
   .guest-img {
     width: 50%;
+  }
+
+  .hide {
+    display: flex;
+  }
+  .more {
+    display: none;
   }
 }
 

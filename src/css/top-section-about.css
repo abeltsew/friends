@@ -75,6 +75,10 @@
   margin: 1rem;
 }
 
+.breadCrambs {
+  display: none;
+}
+
 @keyframes slide-in {
   0% {
     transform: translateY(-100%);
@@ -297,6 +301,29 @@
 }
 
 @media (min-width: 768px) {
+  .breadCrambs {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 6.5rem;
+    right: 0;
+    gap: 0.5rem;
+    padding-right: 10%;
+  }
+
+  .breadCrambs i {
+    color: var(--orange);
+  }
+
+  .breadCrambs :nth-child(1) {
+    color: var(--black);
+  }
+
+  .breadCrambs a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
   .menu-mobile,
   .mobile-menu {
     display: none;

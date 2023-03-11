@@ -70,7 +70,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://abeltsew.github.io/portfolio/)
+- [Live Demo](https://abeltsew.github.io/friends/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

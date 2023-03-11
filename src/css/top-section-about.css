@@ -63,7 +63,7 @@
 }
 
 .mobileLinkText:hover {
-  color: #ff6b00;
+  color: var(--orange);
   font-size: 40px;
   transition: 300ms ease-in-out;
 }
@@ -157,6 +157,7 @@
   flex-direction: column;
   gap: 0.3rem;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .date-location span {

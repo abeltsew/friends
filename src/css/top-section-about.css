@@ -92,7 +92,6 @@
 
 .header {
   background-color: var(--gray);
-  padding-bottom: 4rem;
   background: url('/assets/images/bg-main.avif') no-repeat;
   background-size: cover;
 }
@@ -106,6 +105,7 @@
 .hero {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   padding: 5rem 1.5rem;
 }
@@ -116,6 +116,7 @@
   font-weight: 400;
   font-size: 1.2rem;
   padding-top: 2rem;
+  text-align: center;
 }
 
 .hero-h1,
@@ -124,20 +125,12 @@
   font-style: normal;
   font-weight: 700;
   font-size: 1.7rem;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-h1 span {
   display: block;
-}
-
-.h1-bg {
-  background: url('/assets/images/text-bg.jpeg');
-  color: transparent;
-  -webkit-background-clip: text;
 }
 
 .welcome {
@@ -147,41 +140,160 @@
 .welcome-text {
   padding: 1rem;
   color: var(--black);
-  border: solid white 4px;
+  border: solid var(--gray) 1px;
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
-}
-
-.couch {
-  position: absolute;
-  right: 0;
-  top: 12rem;
-  width: 12rem;
-  height: 8rem;
-  filter: grayscale(40%);
-}
-
-.friends {
-  display: none;
+  text-align: center;
+  background: rgba(255, 255, 250, 50%);
 }
 
 .date-location {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  text-align: center;
 }
 
-.date-location h2 {
+.date-location span {
+  display: block;
   color: var(--black);
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
+  text-decoration: underline;
 }
 
 .date-location h3 {
   color: var(--black);
   font-weight: 400;
   font-size: 0.8rem;
+}
+
+.advert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  padding: 2rem 10%;
+  border-top: solid 2px var(--gray);
+  border-bottom: solid 2px var(--gray);
+}
+
+.advert h2 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.advert h2:after {
+  position: absolute;
+  left: calc(50% - 20px);
+  display: block;
+  width: 40px;
+  border-bottom: 1px solid var(--orange);
+  content: '';
+  padding-top: 1rem;
+}
+
+.advert p {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.competion {
+  height: 8rem;
+  width: 16rem;
+  align-self: center;
+}
+
+.stream {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.img-container {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16rem;
+  height: 8rem;
+}
+
+.stream-img {
+  width: 100%;
+  height: 100%;
+}
+
+.stream p {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  background: rgba(255, 0, 0, 48%);
+  width: 16rem;
+  height: 8rem;
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+
+.stream p span {
+  display: block;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.partner {
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  background-color: var(--black);
+}
+
+.partner h2 {
+  padding-bottom: 2rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.partner h2:after {
+  position: absolute;
+  left: calc(50% - 20px);
+  display: block;
+  width: 40px;
+  border-bottom: 1px solid var(--orange);
+  content: '';
+  padding-top: 0.5rem;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  list-style: none;
+}
+
+.partners img {
+  width: 4rem;
+  height: 2rem;
+}
+
+.footer {
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.rights {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
 }
 
 @media (min-width: 768px) {
@@ -225,8 +337,8 @@
     font-size: 3.5rem;
   }
 
-  .welcome-text {
-    margin-right: 20%;
+  .welcome {
+    align-self: center;
     max-width: 35rem;
   }
 
@@ -279,11 +391,25 @@
     font-size: 1.2rem;
   }
 
-  .couch {
-    top: -6rem;
+  .stream {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  .footer {
+    background-color: var(--black);
+    color: #fff;
+  }
+
+  .footer .logo-left,
+  .footer .logo-right {
+    color: #fff;
   }
 }
-
 @media (min-width: 1200px) {
   .hero-h1,
   .hero-h1 span {
@@ -297,9 +423,6 @@
     display: block;
     padding-top: 8rem;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
-  }
-  .hero-main {
-    display: flex;
   }
 }
 

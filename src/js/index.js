@@ -9,8 +9,8 @@ menu.forEach((list) => {
   list.addEventListener('click', () => toogleMenu());
 });
 
-const setBg = (on) => {
-  if (on) {
+const setBg = (sy) => {
+  if (sy > 60) {
     mobileMenu.style.background = '#fff';
     mobileMenu.style.padding = '0.5rem';
     mobileMenu.style.borderRadius = '50%';
@@ -19,9 +19,7 @@ const setBg = (on) => {
   }
 };
 
-window.addEventListener('scroll', () =>
-  window.scrollY > 60 ? setBg(true) : setBg()
-);
+window.addEventListener('scroll', () => setBg(window.scrollY));
 
 const guests = [
   {
@@ -113,11 +111,12 @@ guests.forEach((guest, i) => {
 
 const moreGuests = document.createElement('button');
 moreGuests.classList.add('more');
-moreGuests.innerHTML =
-  'More <span><i class="fa-solid fa-chevron-down"></i><span>';
+moreGuests.innerHTML = `
+More <span><i class="fa-solid fa-chevron-down"></i><span>
+`;
 
 const showMore = () => {
-  hidden = document.querySelectorAll('.hide');
+  const hidden = document.querySelectorAll('.hide');
   hidden.forEach((guest) => {
     guest.classList.toggle('hide');
   });

@@ -93,7 +93,7 @@
 .header {
   background-color: var(--gray);
   padding-bottom: 4rem;
-  background: url('/assets/images/bg-main.avif') no-repeat;
+  background: url('../../assets/images/bg-main.avif') no-repeat;
   background-size: cover;
 }
 
@@ -135,7 +135,7 @@
 }
 
 .h1-bg {
-  background: url('/assets/images/text-bg.jpeg');
+  background: url('../../assets/images/text-bg.jpeg');
   color: transparent;
   -webkit-background-clip: text;
 }

@@ -96,7 +96,7 @@
 
 .header {
   background-color: var(--gray);
-  background: url('/assets/images/bg-main.avif') no-repeat;
+  background: url('../../assets/images/bg-main.avif') no-repeat;
   background-size: cover;
 }
 

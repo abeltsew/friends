@@ -153,15 +153,6 @@
   font-size: 1rem;
 }
 
-.couch {
-  position: absolute;
-  right: 0;
-  top: 12rem;
-  width: 12rem;
-  height: 8rem;
-  filter: grayscale(40%);
-}
-
 .friends {
   display: none;
 }
@@ -278,10 +269,6 @@
     font-weight: 400;
     font-size: 1.2rem;
   }
-
-  .couch {
-    top: -6rem;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -290,9 +277,6 @@
     font-size: 3.11rem;
   }
 
-  .couch {
-    display: none;
-  }
   .friends {
     display: block;
     padding-top: 8rem;

@@ -78,10 +78,12 @@ guests.forEach((guest, i) => {
   const img = document.createElement('img');
   img.classList.add('guest-img');
   img.src = guest.image;
+  img.alt = `${guest.name}'s picture`;
 
   const imgCover = document.createElement('img');
   imgCover.classList.add('img-cover');
   imgCover.src = '/assets/images/bg-art.png';
+  imgCover.alt = 'background tile';
 
   const guestDescription = document.createElement('div');
   guestDescription.classList.add('guest-description');

@@ -8,7 +8,7 @@
   padding: 2rem;
 }
 
-.guests h2:after {
+.guests h2::after {
   position: absolute;
   left: calc(50% - 35px);
   display: block;
@@ -51,7 +51,7 @@
   font-weight: 400;
 }
 
-.guest-title:after {
+.guest-title::after {
   left: 0;
   display: block;
   width: 2rem;
@@ -76,6 +76,7 @@
   position: absolute;
   z-index: -1;
 }
+
 .more {
   cursor: pointer;
   border: solid 1px var(--gray);

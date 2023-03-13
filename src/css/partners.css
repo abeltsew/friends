@@ -8,6 +8,7 @@
   .footer {
     display: block;
   }
+
   .partner {
     padding: 2rem;
     color: #fff;
@@ -20,7 +21,7 @@
     font-weight: 200;
   }
 
-  .partner h2:after {
+  .partner h2::after {
     position: absolute;
     left: calc(50% - 20px);
     display: block;

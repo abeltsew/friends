@@ -11,7 +11,7 @@
   font-weight: 300;
 }
 
-.main-program h2:after {
+.main-program h2::after {
   position: absolute;
   left: calc(50% - 30px);
   display: block;

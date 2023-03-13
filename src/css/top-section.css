@@ -91,7 +91,6 @@
 }
 
 .header {
-  background-color: var(--gray);
   padding-bottom: 4rem;
   background: url('../../assets/images/bg-main.avif') no-repeat;
   background-size: cover;
@@ -120,11 +119,9 @@
 
 .hero-h1,
 .hero-h1 span {
-  color: var(--orange);
   font-style: normal;
   font-weight: 700;
   font-size: 1.7rem;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
@@ -282,6 +279,7 @@
     padding-top: 8rem;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   .hero-main {
     display: flex;
   }

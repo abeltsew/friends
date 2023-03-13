@@ -96,7 +96,6 @@
 }
 
 .header {
-  background-color: var(--gray);
   background: url('../../assets/images/bg-main.avif') no-repeat;
   background-size: cover;
 }
@@ -191,7 +190,7 @@
   font-size: 1rem;
 }
 
-.advert h2:after {
+.advert h2::after {
   position: absolute;
   left: calc(50% - 20px);
   display: block;
@@ -271,7 +270,7 @@
   text-align: center;
 }
 
-.partner h2:after {
+.partner h2::after {
   position: absolute;
   left: calc(50% - 20px);
   display: block;
@@ -408,16 +407,6 @@
     cursor: pointer;
   }
 
-  .advert h2 + p {
-    width: 50%;
-    align-self: center;
-    font-size: 0.9rem;
-  }
-
-  .advert h2 {
-    font-size: 2rem;
-  }
-
   .link a {
     text-decoration: none;
     color: var(--black);
@@ -448,6 +437,16 @@
     font-size: 2rem;
   }
 
+  .advert h2 + p {
+    width: 50%;
+    align-self: center;
+    font-size: 0.9rem;
+  }
+
+  .advert h2 {
+    font-size: 2rem;
+  }
+
   .img-container {
     width: 24rem;
     height: 12rem;
@@ -472,6 +471,7 @@
     color: #fff;
   }
 }
+
 @media (min-width: 1200px) {
   .hero-h1,
   .hero-h1 span {

@@ -252,6 +252,12 @@
   font-size: 0.8rem;
 }
 
+.stream p:hover {
+  cursor: pointer;
+  background: rgba(36, 16, 16, 0.48);
+  transition: 0.5s ease-in-out;
+}
+
 .partner {
   padding: 2rem;
   color: #fff;

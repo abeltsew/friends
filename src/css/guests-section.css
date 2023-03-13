@@ -67,7 +67,8 @@
 
 .guest-img {
   padding: 1.5rem 0 0 1.5rem;
-  width: 30%;
+  width: 8rem;
+  height: 8rem;
 }
 
 .img-cover {
@@ -101,7 +102,8 @@
   }
 
   .guest-img {
-    width: 50%;
+    width: 9rem;
+    height: 9rem;
   }
 
   .hide {
@@ -110,11 +112,5 @@
 
   .more {
     display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  .guest-img {
-    width: 24%;
   }
 }

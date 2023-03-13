@@ -80,7 +80,7 @@
 
 > This project is made using Mostly HTML and CSS
 
-- [Video Presentation](https://google.com)
+- [Video Presentation](https://www.loom.com/share/d77960348a0a4261b4e17103ae82540e)
 
 To get a local copy up and running, follow these steps.
 
